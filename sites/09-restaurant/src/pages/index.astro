@@ -89,7 +89,7 @@ const stars = [1, 2, 3, 4, 5];
   <section class="hero">
     <div class="hero__text">
       <h1 class="hero__title">{heroS.heading}</h1>
-      <p>[TODO]</p>
+      <p>{heroS.text}</p>
       <div class="btns">
         <a class="btn btn--accent" href={href(heroS.ctas[0].href)}>{heroS.ctas[0].label}</a>
         <a class="btn btn--outline" href={href(heroS.ctas[1].href)}>{heroS.ctas[1].label}</a>
@@ -101,7 +101,7 @@ const stars = [1, 2, 3, 4, 5];
   <section id="sobre" class="intro container-x">
     <div class="intro__text">
       <h2 class="h2">{intro.heading}</h2>
-      <p class="muted">[TODO]</p>
+      <p class="muted">{intro.text}</p>
       <a class="btn btn--dark" href={href(intro.link.href)}>{intro.link.label}</a>
     </div>
     <div class="intro__media">
@@ -149,9 +149,9 @@ const stars = [1, 2, 3, 4, 5];
 
   <section id="loja" class="section container-x" aria-labelledby="shop-title" data-carousel>
     <div class="center">
-      <p class="eyebrow">[TODO]</p>
+      <p class="eyebrow">{shop.eyebrow}</p>
       <h2 id="shop-title" class="h2">{shop.heading}</h2>
-      <p>[TODO]</p>
+      <p>{shop.text}</p>
     </div>
     <div class="carousel">
       <button class="round" type="button" data-prev><span class="visually-hidden">Anterior</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 9H3m5-5L3 9l5 5"></path></svg></button>
@@ -178,16 +178,16 @@ const stars = [1, 2, 3, 4, 5];
     <div class="center">
       <p class="eyebrow">{header.menu.find((m: MenuItem) => m === 'Agenda')}</p>
       <h2 id="agenda-title" class="h2">{agenda.heading}</h2>
-      <p>[TODO]</p>
+      <p>{agenda.text}</p>
     </div>
     <ul class="events">
-      {agenda.items.map((e: { title: string; link: string }, i: number) => (
+      {agenda.items.map((e: { title: string; date: string; link: string }, i: number) => (
         <li class="event">
           <Img class="event__img" src={eventImages[i]} alt="" sizes="(min-width: 810px) 33vw, 100vw" />
           <div class="event__body">
             <div class="event__row">
               <h3 class="event__title">{e.title}</h3>
-              <p>[TODO]</p>
+              <p>{e.date}</p>
             </div>
             <a class="btn btn--dark" href={href('Agenda')}>{e.link}</a>
           </div>
@@ -198,8 +198,8 @@ const stars = [1, 2, 3, 4, 5];
 
   <section class="section" aria-labelledby="reviews-title">
     <div class="container-x">
-      <p class="eyebrow">[TODO]</p>
-      <h2 id="reviews-title" class="h2 reviews__title">[TODO]</h2>
+      <p class="eyebrow">{testimonials.eyebrow}</p>
+      <h2 id="reviews-title" class="h2 reviews__title">{testimonials.heading}</h2>
       <ul class="reviews__logos">
         {testimonials.logos.map((l: string) => <li>{l}</li>)}
       </ul>
@@ -218,9 +218,9 @@ const stars = [1, 2, 3, 4, 5];
   </section>
 
   <section class="section center container-x" aria-labelledby="partners-title">
-    <p class="eyebrow">[TODO]</p>
+    <p class="eyebrow">{partners.eyebrow}</p>
     <h2 id="partners-title" class="h2">{partners.heading}</h2>
-    <p>[TODO]</p>
+    <p>{partners.text}</p>
   </section>
   <div class="marquee" aria-label="Parceiros">
     <ul class="marquee__track">
@@ -229,13 +229,13 @@ const stars = [1, 2, 3, 4, 5];
   </div>
 
   <ul class="usp" aria-label="Diferenciais">
-    {[1, 2, 3].map(() => <li><span aria-hidden="true">★</span> [TODO] <span aria-hidden="true">★</span></li>)}
+    {cta.usps.map((u: string) => <li><span aria-hidden="true">★</span> {u} <span aria-hidden="true">★</span></li>)}
   </ul>
 
   <section id="contato" class="cta">
     <div class="cta__text container-x">
       <h2 class="h2">{cta.heading}</h2>
-      <p>[TODO]</p>
+      <p>{cta.text}</p>
       <div class="btns">
         <a class="btn btn--accent" href={href(cta.cta.href)}>{cta.cta.label}</a>
       </div>
@@ -248,10 +248,10 @@ const stars = [1, 2, 3, 4, 5];
       <div class="ftr__brand">
         <a class="hdr__logo" href="/">{header.logoText}</a>
         <p class="ftr__phone">{footer.phone}</p>
-        <p>[TODO]</p>
-        <p class="ftr__mail">[TODO]</p>
+        <p>{footer.address}</p>
+        <p class="ftr__mail"><a href={`mailto:${footer.email}`}>{footer.email}</a></p>
         <ul class="ftr__social">
-          {footer.socials.map((s: string) => <li>{s}</li>)}
+          {footer.socials.map((s: string) => <li><a href="#">{s}</a></li>)}
         </ul>
       </div>
       <nav aria-labelledby="ftr-links">
@@ -262,12 +262,12 @@ const stars = [1, 2, 3, 4, 5];
       </nav>
       <div>
         <h2 class="ftr__head">Horário de funcionamento</h2>
-        <p>[TODO]</p>
+        <p>{footer.hours}</p>
       </div>
     </div>
     <div class="ftr__legal container-x">
       <p>© {new Date().getFullYear()} {content.businessName}</p>
-      {footer.legal.map((l: string) => <span>{l} [TODO]</span>)}
+      {footer.legal.map((l: string) => <a href="#">{l}</a>)}
     </div>
   </footer>
 </BaseLayout>

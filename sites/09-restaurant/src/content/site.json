@@ -9,89 +9,237 @@
     {
       "id": "header",
       "logoText": "Quintal da Serra",
-      "menu": [{ "label": "Sobre nós", "children": ["Quem somos", "Cozinha", "Ingredientes", "Blog"] }, "Cardápio", "Pedidos", "Agenda", "Contato"]
+      "menu": [
+        {
+          "label": "Sobre nós",
+          "children": [
+            "Quem somos",
+            "Cozinha",
+            "Ingredientes",
+            "Blog"
+          ]
+        },
+        "Cardápio",
+        "Pedidos",
+        "Agenda",
+        "Contato"
+      ]
     },
     {
       "id": "hero",
       "heading": "O sabor da nossa cidade",
       "ctas": [
-        { "label": "Cardápio de comidas e bebidas", "href": "/cardapio" },
-        { "label": "Peça online", "href": "/pedidos" }
+        {
+          "label": "Cardápio de comidas e bebidas",
+          "href": "/cardapio"
+        },
+        {
+          "label": "Peça online",
+          "href": "/pedidos"
+        }
       ],
-      "image": { "alt": "Mesa posta com pratos do restaurante", "unsplashQuery": "restaurant table dishes" }
+      "image": {
+        "alt": "Mesa posta com pratos do restaurante",
+        "unsplashQuery": "restaurant table dishes"
+      },
+      "text": "Pratos regionais, massas frescas e sobremesas da casa preparados todos os dias com ingredientes de produtores locais."
     },
     {
       "id": "intro",
       "heading": "Restaurante e cozinha local em um só lugar",
-      "link": { "label": "Conheça a cozinha", "href": "/cozinha" }
+      "link": {
+        "label": "Conheça a cozinha",
+        "href": "/cozinha"
+      },
+      "text": "No Quintal da Serra você acompanha o preparo na cozinha aberta, prova receitas da estação e come com calma em um ambiente acolhedor."
     },
     {
       "id": "feature-1",
       "heading": "Sabor local no coração da cidade",
-      "text": "[TODO]",
-      "link": { "label": "Conheça o restaurante", "href": "/restaurante" },
-      "image": { "alt": "Salão do restaurante", "unsplashQuery": "cozy restaurant interior" }
+      "text": "Nosso salão tem mesas amplas, varanda com jardim e vista para a cozinha. Um lugar para reunir a família e os amigos em torno de boa comida.",
+      "link": {
+        "label": "Conheça o restaurante",
+        "href": "/restaurante"
+      },
+      "image": {
+        "alt": "Salão do restaurante",
+        "unsplashQuery": "cozy restaurant interior"
+      }
     },
     {
       "id": "feature-2",
       "heading": "Feito com técnica, ambiente e paixão",
-      "text": "[TODO]",
-      "link": { "label": "Sobre nós", "href": "/sobre" },
-      "image": { "alt": "Chef preparando prato", "unsplashQuery": "chef plating food" }
+      "text": "Cada prato nasce de testes na nossa cozinha. Usamos legumes da horta, carnes selecionadas e pães de fermentação natural feitos na casa.",
+      "link": {
+        "label": "Sobre nós",
+        "href": "/sobre"
+      },
+      "image": {
+        "alt": "Chef preparando prato",
+        "unsplashQuery": "chef plating food"
+      }
     },
     {
       "id": "more-than",
       "heading": "Muito mais que comida",
-      "text": "[TODO]",
-      "cta": { "label": "Planeje sua visita", "href": "/contato" }
+      "text": "Além do almoço e do jantar, servimos menus para grupos, cafés da tarde aos fins de semana e recebemos eventos fechados.",
+      "cta": {
+        "label": "Planeje sua visita",
+        "href": "/contato"
+      }
     },
     {
       "id": "shop",
       "heading": "Leve um pedaço da cidade para casa",
       "items": [
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Prato de massa fresca", "unsplashQuery": "fresh pasta dish" } },
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Prato de carne grelhada", "unsplashQuery": "grilled steak plate" } },
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Salada colorida", "unsplashQuery": "colorful salad bowl" } },
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Sobremesa artesanal", "unsplashQuery": "dessert plate restaurant" } },
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Pão artesanal", "unsplashQuery": "artisan bread" } },
-        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Taça de vinho", "unsplashQuery": "wine glass restaurant" } }
+        {
+          "name": "Talharim fresco ao ragu",
+          "price": "R$ 58,00",
+          "image": {
+            "alt": "Prato de massa fresca",
+            "unsplashQuery": "fresh pasta dish"
+          }
+        },
+        {
+          "name": "Bife ancho grelhado",
+          "price": "R$ 89,00",
+          "image": {
+            "alt": "Prato de carne grelhada",
+            "unsplashQuery": "grilled steak plate"
+          }
+        },
+        {
+          "name": "Salada da horta",
+          "price": "R$ 39,00",
+          "image": {
+            "alt": "Salada colorida",
+            "unsplashQuery": "colorful salad bowl"
+          }
+        },
+        {
+          "name": "Pudim de doce de leite",
+          "price": "R$ 24,00",
+          "image": {
+            "alt": "Sobremesa artesanal",
+            "unsplashQuery": "dessert plate restaurant"
+          }
+        },
+        {
+          "name": "Pão de fermentação natural",
+          "price": "R$ 22,00",
+          "image": {
+            "alt": "Pão artesanal",
+            "unsplashQuery": "artisan bread"
+          }
+        },
+        {
+          "name": "Taça de vinho tinto da casa",
+          "price": "R$ 32,00",
+          "image": {
+            "alt": "Taça de vinho",
+            "unsplashQuery": "wine glass restaurant"
+          }
+        }
       ],
-      "cta": { "label": "Fazer pedido", "href": "/pedidos" }
+      "cta": {
+        "label": "Fazer pedido",
+        "href": "/pedidos"
+      },
+      "eyebrow": "Pedidos online",
+      "text": "Peça seus pratos favoritos online e receba em casa ou retire no restaurante."
     },
     {
       "id": "agenda",
       "heading": "Sempre tem algo acontecendo",
       "items": [
-        { "title": "[TODO]", "link": "Mais informações" },
-        { "title": "[TODO]", "link": "Mais informações" },
-        { "title": "[TODO]", "link": "Mais informações" }
-      ]
+        {
+          "title": "Jantar harmonizado",
+          "date": "Sexta, 13 de novembro, 20h",
+          "link": "Mais informações"
+        },
+        {
+          "title": "Almoço com música ao vivo",
+          "date": "Domingo, 22 de novembro, 12h",
+          "link": "Mais informações"
+        },
+        {
+          "title": "Festival de massas frescas",
+          "date": "Sábado, 5 de dezembro, 19h",
+          "link": "Mais informações"
+        }
+      ],
+      "text": "Confira os próximos eventos no restaurante e garanta sua mesa."
     },
     {
       "id": "testimonials",
       "items": [
-        { "quote": "[TODO]", "author": "[TODO]" },
-        { "quote": "[TODO]", "author": "[TODO]" }
+        {
+          "quote": "Comida caseira de verdade, ambiente agradável e atendimento atencioso. O ragu é imperdível.",
+          "author": "Ricardo Nogueira"
+        },
+        {
+          "quote": "Fizemos o aniversário da família no salão e tudo saiu perfeito, da entrada à sobremesa.",
+          "author": "Helena Duarte"
+        }
       ],
-      "logos": ["Quintal da Serra Restaurante", "Quintal da Serra Cozinha"]
+      "logos": [
+        "Quintal da Serra Restaurante",
+        "Quintal da Serra Cozinha"
+      ],
+      "eyebrow": "Avaliações",
+      "heading": "O que nossos clientes dizem"
     },
     {
       "id": "partners",
       "heading": "Mais fortes junto com produtores locais",
-      "logos": ["[TODO]", "[TODO]", "[TODO]", "[TODO]"]
+      "logos": [
+        "Sítio Vale Verde",
+        "Queijaria Campo Alto",
+        "Moinho Grão Dourado",
+        "Horta Bela Vista"
+      ],
+      "eyebrow": "Parceiros",
+      "text": "Trabalhamos com produtores e fornecedores da região para manter tudo fresco e local."
     },
     {
       "id": "cta",
       "heading": "Prove a cozinha no nosso restaurante",
-      "cta": { "label": "Planeje sua visita", "href": "/contato" },
-      "image": { "alt": "Amigos jantando no restaurante", "unsplashQuery": "friends dining restaurant" }
+      "cta": {
+        "label": "Planeje sua visita",
+        "href": "/contato"
+      },
+      "image": {
+        "alt": "Amigos jantando no restaurante",
+        "unsplashQuery": "friends dining restaurant"
+      },
+      "text": "Reserve sua mesa, prove os pratos da estação e conheça de perto a nossa cozinha aberta.",
+      "usps": [
+        "Cozinha própria",
+        "Ingredientes locais",
+        "Feito na cidade"
+      ]
     },
     {
       "id": "footer",
-      "phone": "[TODO]",
-      "socials": ["Instagram", "Facebook"],
-      "menu": ["Sobre", "Cardápio", "Pedidos", "Agenda", "Contato"],
-      "legal": ["Privacidade", "Termos"]
+      "phone": "(31) 4000-0000",
+      "socials": [
+        "Instagram",
+        "Facebook"
+      ],
+      "menu": [
+        "Sobre",
+        "Cardápio",
+        "Pedidos",
+        "Agenda",
+        "Contato"
+      ],
+      "legal": [
+        "Privacidade",
+        "Termos"
+      ],
+      "address": "Rua dos Ipês, 245 – Belo Horizonte, MG",
+      "email": "contato@restaurantequintaldaserra.com.br",
+      "hours": "Terça a sexta, 11h30 às 23h · Sábado e domingo, 12h às 23h"
     }
   ]
 }
