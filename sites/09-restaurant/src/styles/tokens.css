@@ -1,0 +1,63 @@
+/* Site tokens: reference R1 palette/type from shared/tokens, plus spacing measured on the reference at 1440px. */
+@import '../../../../shared/tokens/09-restaurant.css';
+
+:root {
+  /* Approved Google Fonts stand-in for Satoshi (docs/logs/open-questions.md). */
+  --font-heading: "Manrope", system-ui, sans-serif;
+
+  --color-bg: var(--color-cream);
+  --color-surface: var(--color-cream-light);
+  --color-text: var(--color-ink);
+  --color-muted: var(--color-grey-dark);
+  --color-border: var(--color-grey);
+  /* Contrast fix (axe): reference accent #e45d4d darkened to closest AA value; used only where it sits on cream or under white text. */
+  --color-accent-aa: #ad473b;
+  --color-primary: var(--color-accent);
+  --color-on-primary: var(--color-white);
+  --color-focus: var(--color-extra-yellow);
+
+  --text-sm: var(--text-2);
+  --text-base: var(--text-3);
+  --leading-body: 1.6;
+  --leading-heading: 1.35;
+  --tracking-heading: -0.02em;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-section: 100px;
+  --space-hero: 130px;
+  --space-gutter: 30px;
+  --container-max: 1080px;
+  --container-narrow: 980px;
+  --header-height: 84px;
+
+  --border-width: 1px;
+  --radius-button: 6px;
+  --radius-card: var(--radius-md);
+  --radius-input: var(--radius-md);
+  --radius-round: 50%;
+  --focus-width: 2px;
+  --focus-offset: 3px;
+  --nav-button: 34px;
+  --product-circle: 240px;
+  --avatar: 44px;
+
+  --duration-fast: 200ms;
+  --duration-marquee: 30s;
+  --opacity-hover: 0.85;
+  --z-header: 10;
+  --z-skip: 20;
+}
+
+@media (max-width: 809px) {
+  :root {
+    --space-section: 64px;
+    --space-hero: 96px;
+    --space-gutter: 20px;
+    --space-xl: 40px;
+    --product-circle: 200px;
+  }
+}

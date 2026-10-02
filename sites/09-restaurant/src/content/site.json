@@ -1,0 +1,97 @@
+{
+  "businessName": "Restaurante Quintal da Serra",
+  "reference": "R1",
+  "seo": {
+    "title": "Restaurante Quintal da Serra | Cozinha local no centro da cidade",
+    "description": "Restaurante com cozinha local, ingredientes da região e agenda de eventos. Veja o cardápio, faça seu pedido e planeje sua visita."
+  },
+  "sections": [
+    {
+      "id": "header",
+      "logoText": "Quintal da Serra",
+      "menu": [{ "label": "Sobre nós", "children": ["Quem somos", "Cozinha", "Ingredientes", "Blog"] }, "Cardápio", "Pedidos", "Agenda", "Contato"]
+    },
+    {
+      "id": "hero",
+      "heading": "O sabor da nossa cidade",
+      "ctas": [
+        { "label": "Cardápio de comidas e bebidas", "href": "/cardapio" },
+        { "label": "Peça online", "href": "/pedidos" }
+      ],
+      "image": { "alt": "Mesa posta com pratos do restaurante", "unsplashQuery": "restaurant table dishes" }
+    },
+    {
+      "id": "intro",
+      "heading": "Restaurante e cozinha local em um só lugar",
+      "link": { "label": "Conheça a cozinha", "href": "/cozinha" }
+    },
+    {
+      "id": "feature-1",
+      "heading": "Sabor local no coração da cidade",
+      "text": "[TODO]",
+      "link": { "label": "Conheça o restaurante", "href": "/restaurante" },
+      "image": { "alt": "Salão do restaurante", "unsplashQuery": "cozy restaurant interior" }
+    },
+    {
+      "id": "feature-2",
+      "heading": "Feito com técnica, ambiente e paixão",
+      "text": "[TODO]",
+      "link": { "label": "Sobre nós", "href": "/sobre" },
+      "image": { "alt": "Chef preparando prato", "unsplashQuery": "chef plating food" }
+    },
+    {
+      "id": "more-than",
+      "heading": "Muito mais que comida",
+      "text": "[TODO]",
+      "cta": { "label": "Planeje sua visita", "href": "/contato" }
+    },
+    {
+      "id": "shop",
+      "heading": "Leve um pedaço da cidade para casa",
+      "items": [
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Prato de massa fresca", "unsplashQuery": "fresh pasta dish" } },
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Prato de carne grelhada", "unsplashQuery": "grilled steak plate" } },
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Salada colorida", "unsplashQuery": "colorful salad bowl" } },
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Sobremesa artesanal", "unsplashQuery": "dessert plate restaurant" } },
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Pão artesanal", "unsplashQuery": "artisan bread" } },
+        { "name": "[TODO]", "price": "[TODO]", "image": { "alt": "Taça de vinho", "unsplashQuery": "wine glass restaurant" } }
+      ],
+      "cta": { "label": "Fazer pedido", "href": "/pedidos" }
+    },
+    {
+      "id": "agenda",
+      "heading": "Sempre tem algo acontecendo",
+      "items": [
+        { "title": "[TODO]", "link": "Mais informações" },
+        { "title": "[TODO]", "link": "Mais informações" },
+        { "title": "[TODO]", "link": "Mais informações" }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "items": [
+        { "quote": "[TODO]", "author": "[TODO]" },
+        { "quote": "[TODO]", "author": "[TODO]" }
+      ],
+      "logos": ["Quintal da Serra Restaurante", "Quintal da Serra Cozinha"]
+    },
+    {
+      "id": "partners",
+      "heading": "Mais fortes junto com produtores locais",
+      "logos": ["[TODO]", "[TODO]", "[TODO]", "[TODO]"]
+    },
+    {
+      "id": "cta",
+      "heading": "Prove a cozinha no nosso restaurante",
+      "cta": { "label": "Planeje sua visita", "href": "/contato" },
+      "image": { "alt": "Amigos jantando no restaurante", "unsplashQuery": "friends dining restaurant" }
+    },
+    {
+      "id": "footer",
+      "phone": "[TODO]",
+      "socials": ["Instagram", "Facebook"],
+      "menu": ["Sobre", "Cardápio", "Pedidos", "Agenda", "Contato"],
+      "legal": ["Privacidade", "Termos"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "/cardapio": "#cardapio",
+  "/pedidos": "#loja",
+  "/cozinha": "#sobre",
+  "/restaurante": "#espaco",
+  "/sobre": "#sobre",
+  "/contato": "#contato",
+  "Sobre nós": "#sobre",
+  "Quem somos": "#sobre",
+  "Cozinha": "#sobre",
+  "Ingredientes": "#espaco",
+  "Blog": "#agenda",
+  "Sobre": "#sobre",
+  "Cardápio": "#cardapio",
+  "Pedidos": "#loja",
+  "Agenda": "#agenda",
+  "Contato": "#contato"
+}
